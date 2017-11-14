@@ -6,3 +6,4 @@
  * Time: 21:52
  */
 
+require 'view/admin/admin.html';
