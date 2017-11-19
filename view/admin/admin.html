@@ -10,7 +10,10 @@
     <div>
         <label>接口:</label>
         <p>
-            <textarea name="content"></textarea>
+            <textarea name="content" style="resize: none;width: 200px;height: 200px"><?php
+            $fh = fopen('view/admin/msg.txt','r');
+            while(($row =fgetcsv($fh))!=false)
+                {echo $row[0]."\n";}fclose($fh);?></textarea>
         </p>
     </div>
         <p>

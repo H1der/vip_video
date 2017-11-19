@@ -8,7 +8,7 @@
 
 $content = $_POST["content"];
 
-$fh = fopen('msg.txt','a');
+$fh = fopen('msg.txt','w');
 
 $str = $content ."\n";
 fwrite($fh,$str);

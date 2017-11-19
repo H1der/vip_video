@@ -7,9 +7,6 @@
  */
 
 require 'view/admin/admin.html';
-
-$fh = fopen('view/admin/msg.txt','r');
-
-while (($row =fgetcsv($fh))!=false){
-    echo $row[0]."</br>";
-}
+//while (($row =fgetcsv($fh))!=false){
+//    echo $row[0]."</br>";
+//}
