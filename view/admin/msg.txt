@@ -1,4 +1,3 @@
-2341234124
-41241224123
-41412312
-12412
+https://api.codeku.me/jiexi/index.php?url=
+https://www.bttsp.com/api.php?url=
+http://xiaomiid.cn/v/jx.php?url=

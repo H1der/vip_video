@@ -32,9 +32,14 @@
             <form method="get" id="1233911832">
                 <div class="input-group mdui-container">
                     <select class="form-control input-lg mdui-m-b-1 mdui-m-t-1" id="jk">
-                        <option value="http://api.47ks.com/webcloud/?v=">接口1：优酷、乐视、搜狐、芒果、PPTV、华数</option>
-                        <option value="http://vip.72du.com/api/?url=">接口2：优酷、爱奇艺、乐视、搜狐、芒果、PPTV、华数</option>
-                        <option value="http://api.wlzhan.com/sudu/?url=">接口3：腾讯、乐视、搜狐、芒果、PPTV、华数</option>
+                        <?php
+                        $i = 1;
+                        while(($row =fgetcsv($fh))!=false){?>
+                        <option value="<?php echo $row[0] ?>">接口<?php echo $i?></option>";
+                        <?php
+                        $i = $i+1;
+                        }fclose($fh);
+                        ?>
                     </select>
                 </div>
                 <div class="input-group mdui-container">
